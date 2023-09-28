@@ -1,0 +1,10 @@
+/* styles/Header.module.css */
+/* styles/Header.module.css */
+.header {
+  width: 100%;
+  color: #fff; /* White text */
+  padding: 1rem 0; /* Some vertical padding */
+  text-align: center; /* Center the text */
+  font-size: 1.5rem; /* Adjust as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: slight shadow for depth */
+}

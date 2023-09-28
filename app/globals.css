@@ -1,0 +1,141 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+  --foreground-rgb: 240, 240, 240; /* Adjusted to a lighter shade for better readability against the dark blue */
+  --background-start-rgb: 5, 12, 32; /* Darkish blue start */
+  --background-end-rgb: 8, 25, 58; /* Darkish blue end */
+
+  --primary-glow: conic-gradient(
+    from 180deg at 50% 50%,
+    #1f60ff33 0deg,
+    #0c47ff33 55deg,
+    #6baaff33 120deg,
+    #0a3e9933 160deg,
+    transparent 360deg
+  );
+  --secondary-glow: radial-gradient(
+    rgba(25, 65, 165, 1),
+    rgba(25, 65, 165, 0)
+  );
+
+  --tile-start-rgb: 12, 32, 72;
+  --tile-end-rgb: 8, 22, 48;
+  --tile-border: conic-gradient(
+    #ffffff80,
+    #ffffff40,
+    #ffffff30,
+    #ffffff20,
+    #ffffff10,
+    #ffffff10,
+    #ffffff80
+  );
+
+  --callout-rgb: 15, 35, 70;
+  --callout-border-rgb: 35, 55, 90;
+  --card-rgb: 20, 45, 85;
+  --card-border-rgb: 40, 65, 100;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+
+    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --secondary-glow: linear-gradient(
+      to bottom right,
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0.3)
+    );
+
+    --tile-start-rgb: 2, 13, 46;
+    --tile-end-rgb: 2, 5, 19;
+    --tile-border: conic-gradient(
+      #ffffff80,
+      #ffffff40,
+      #ffffff30,
+      #ffffff20,
+      #ffffff10,
+      #ffffff10,
+      #ffffff80
+    );
+
+    --callout-rgb: 20, 20, 20;
+    --callout-border-rgb: 108, 108, 108;
+    --card-rgb: 100, 100, 100;
+    --card-border-rgb: 200, 200, 200;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+          to bottom,
+          rgba(var(--background-start-rgb), 0.6), /* Added 0.6 opacity for the gradient overlay */
+          rgba(var(--background-end-rgb), 0.6)
+      ),
+      url('https://wallpaperset.com/w/full/0/9/c/45562.jpg') no-repeat center center fixed; /* Image URL */
+  background-size: cover; /* Ensures the background spans the full viewport */
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+
+.mainContainer {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  width: 100%;
+}
+
+
+.leftContainer, .rightContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center; /* Center the content inside vertically */
+  justify-content: center; /* Center the content inside horizontally */
+}
+
+/* Style for the DailyMealPlan button */
+.rightContainer button {
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50; /* Adjust color as needed */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+
+}
+

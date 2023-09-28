@@ -1,0 +1,55 @@
+/* styles/foodEntry.css */
+
+.foodEntryForm {
+    width: 90%;
+    margin-top: 50px;
+    max-width: 400px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.foodEntryLabel {
+    font-size: 16px;
+    color: rgb(var(--foreground-rgb)); /* Using the foreground color from :root */
+    display: flex;
+    flex-direction: column;
+    font-style:oblique;
+    gap: 8px;
+}
+
+.foodEntryInput, .foodEntryCaloriesInput {
+    width: 120px; 
+    color:white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: 1px solid rgb(var(--card-border-rgb)); /* Using the card border color from :root */
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s, background-color 0.3s;
+    background-color: rgb(var(--tile-start-rgb)); /* Using the tile start color from :root */
+}
+
+.foodEntryInput:focus, .foodEntryCaloriesInput:focus {
+    border-color: rgb(var(--card-rgb)); /* Using the card color from :root */
+    background-color: rgb(var(--tile-end-rgb)); /* Using the tile end color from :root */
+}
+
+.foodEntryButton {
+    align-self: center;
+    padding: 10px 15px;
+    background-color: rgb(var(--background-start-rgb)); /* Using the background start color from :root */
+    color: rgb(var(--foreground-rgb)); /* Using the foreground color from :root */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-right:120px;
+}
+
+.foodEntryButton:hover {
+    background-color: rgb(var(--background-end-rgb)); /* Using the background end color from :root */
+}

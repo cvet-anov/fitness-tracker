@@ -1,0 +1,183 @@
+.calendarContainer {
+    width: 95%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgba(var(--card-rgb), 0.9);
+    box-shadow: 0 8px 16px rgba(var(--foreground-rgb), 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; /* Increased margin */
+    border-bottom: 2px solid rgba(var(--foreground-rgb), 0.2); /* Thicker border */
+    padding-bottom: 15px; /* Increased padding */
+}
+
+.header h2 {
+    margin: 0;
+    color: rgb(var(--foreground-rgb));
+    font-size: 28px; /* Increased font size */
+    font-weight: 600;
+}
+
+.navigation button {
+    padding: 10px 15px;
+    margin: 0 10px; /* Increased margin for better spacing */
+    background-color: rgba(var(--tile-start-rgb), 0.8);
+    color: rgb(var(--foreground-rgb));
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+.navigation button:hover {
+    background-color: rgba(var(--tile-end-rgb), 0.9);
+}
+
+/* ... Rest of the CSS remains unchanged ... */
+
+
+.calendarGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.calendarDay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(var(--foreground-rgb), 0.2);
+    background-color: rgba(var(--tile-start-rgb), 0.7);
+    transition: background-color 0.3s;
+}
+
+.calendarDay:hover {
+    background-color: rgba(var(--tile-end-rgb), 0.8);
+}
+
+.dayNumber {
+    font-weight: bold;
+    color: rgb(var(--foreground-rgb));
+    margin-bottom: 8px;
+}
+
+.foodList {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.foodItem {
+    color: rgba(var(--foreground-rgb), 0.8);
+    margin: 3px 0;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+}
+
+.dayReview {
+    margin-top: 80px;
+    margin-left:20px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%; 
+    height:500px;
+    color: #f7f7f7; /* Whiter font */
+    padding: 20px;
+    background-color: rgba(var(--tile-start-rgb), 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(var(--foreground-rgb), 0.15);
+}
+
+.foodSection, .workoutSection {
+    width: 45%; 
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(var(--card-rgb), 0.85);
+}
+
+.workoutSection {
+    margin-left: 10px;
+    box-shadow: 0 0 10px rgba(var(--foreground-rgb), 0.15);
+}
+.foodSection{
+    box-shadow: 0 0 10px rgba(var(--foreground-rgb), 0.15);
+}
+
+.foodSection h3, .workoutSection h3 {
+    font-size: 25px; /* Larger font size for headings */
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(var(--foreground-rgb), 0.1); 
+    padding-bottom: 10px;
+}
+.foodSection li, .workoutSection li {
+    display:flex;
+    margin-bottom: 20px;
+    margin-left:10px;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+
+
+.dayName {
+    color: #f7f7f7; /* Whiter font */
+    margin-left: 5px; 
+    font-size: 0.9em; 
+}
+
+.dayReview button {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 70px;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: rgba(8, 25, 58, 0.8); /* Darker button */
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* MUI default border radius */
+    box-shadow: 0 3px 5px 2px rgba(8, 25, 58, 0.3);
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: rgba(5, 12, 32, 0.8); /* Even darker on hover */
+    }
+}
+
+.dayReview button:hover {
+    background-color: rgba(var(--tile-start-rgb), 0.85);
+}
+
+/* Styling for the smaller IconButton */
+.smallerIconButton {
+    padding: 2px; /* Adjust this value based on how small you want the button to be */
+    vertical-align: top;
+}
+
+.foodListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between elements in the list item */
+}
+
+.foodImage {
+    width: 80px; /* Adjusted to a larger size */
+    height: auto;
+    border-radius: 5px; /* Optional, for rounded corners */
+    margin-right: 10px; /* Added some space between the image and the text */
+}

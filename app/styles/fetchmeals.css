@@ -1,0 +1,58 @@
+/* Main container styling */
+.fetchMealsContainer {
+    width: 400px;
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(8, 25, 58, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.fetchMealsContainer h2 {
+    color: #f7f7f7;
+    font-size: 28px;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.fetchMealsContainer h3 {
+    color: #f7f7f7;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.fetchMealsContainer p {
+    color: #f7f7f7;
+    margin: 10px 0;
+}
+
+.fetchMealsContainer a {
+    color: #f7f7f7;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Nutritional Information */
+.nutritionalInfo {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(5, 12, 32, 0.8);
+}
+
+.nutritionalInfo h3 {
+    color: #f7f7f7;
+    font-size: 24px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.nutritionalInfo p {
+    color: #f7f7f7;
+    margin: 10px 0;
+}
+
